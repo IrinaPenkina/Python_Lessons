@@ -20,14 +20,30 @@
 
 
 
-from random import randrange
+text = str(input('Введите символы: '))
 
-def func(n):
-    if n -- 0:
-        return '->'
-    
-    var = randrange(n)
-    print(var, end=' ')
-    return f'{func(n - 1)}{var}'
+# 1 способ
 
-print(func(input('Задайте элементы')))
+# def reversed3(variable): 
+#     if len(variable) == 1:
+#         return variable
+#     return variable[-1] + reversed3(variable[:-1])
+
+# n = reversed3(text)
+# print(n)
+
+
+# 2 способ
+
+# def reversed4(variable):
+#     res=''.join(reversed(variable))
+#     return res
+
+# n = reversed4(text)
+# print(n)
+
+
+# 3 способ
+
+n = text[::-1]
+print(n)
